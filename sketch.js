@@ -34,17 +34,8 @@ function draw() {
   text("Right Arrow = Bathing",20, 100);
   text("m key = Moving",20, 115);
   
-  /*edges=createEdgeSprites();
-  astronautbounce.Off(edges);*/
-
-  /*edges=createEdgeSprites();
-  astronaut.BounceOff(edges);*/
-
   edges=createEdgeSprites();
   astronaut.bounceOff(edges);
-
-  /*edges=createEdgeSprite();
-  astronaut.bounceOff(edges);*/
   
   if(keyDown("UP_ARROW")){
     astronaut.addAnimation("brushing", brush);
@@ -79,32 +70,11 @@ function draw() {
     astronaut.velocityY = 0;
   }
 
-  /*if(key Down("m")){
-    astronaut.addAnimation("moving", move);
-    astronaut.changeAnimation("moving");
-    astronaut.velocityX = 1;
-    astronaut.velocityY = 1;
-  }*/
-
   if(keyDown("m")){
     astronaut.addAnimation("moving", move);
     astronaut.changeAnimation("moving");
-    astronaut.velocityX = 0;
-    astronaut.velocityY = 0;
+    astronaut.velocityX = 1;
+    astronaut.velocityY = 1;
   }
-
-  /*if(keyDown("m")){
-    astronaut.changeAnimation("moving", move);
-    astronaut.changeAnimation("moving");
-    astronaut.velocityX = 1;
-    astronaut.velocityY = 1;
-  }*/
-
-  /*if(keyDown("m")){
-    astronaut.addAnimation("moving", move);
-    astronaut.changeAnimation("moving");
-    astronaut.velocityX = 1;
-    astronaut.velocityY = 1;
-  }*/
 
 }
