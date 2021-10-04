@@ -40,8 +40,8 @@ function draw() {
   /*edges=createEdgeSprites();
   astronaut.BounceOff(edges);*/
 
-  /*edges=createEdgeSprites();
-  astronaut.bounceOff(edges);*/
+  edges=createEdgeSprites();
+  astronaut.bounceOff(edges);
 
   /*edges=createEdgeSprite();
   astronaut.bounceOff(edges);*/
