@@ -1,5 +1,6 @@
 var bg,sleep, brush, gym, eat, bath, move;
 var astronaut;
+var edges;
 
 function preload(){
   bg= loadImage("images/iss.png");
@@ -17,7 +18,7 @@ function setup() {
   astronaut = createSprite(300,230);
   astronaut.addAnimation("sleeping", sleep);
   astronaut.scale = 0.1;
-  
+  edges=createEdgeSprites();
 }
 
 function draw() {
@@ -34,7 +35,7 @@ function draw() {
   text("Right Arrow = Bathing",20, 100);
   text("m key = Moving",20, 115);
   
-  edges=createEdgeSprites();
+
   astronaut.bounceOff(edges);
   
   if(keyDown("UP_ARROW")){
